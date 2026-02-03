@@ -1,0 +1,12 @@
+Frontend (UI Design) – Figma
+
+This project uses Figma for frontend design.
+
+Screens to be designed:
+ Login Screen
+ Register Screen
+ Movie List Screen
+ Seat Selection Screen
+ Booking Confirmation Screen
+
+All team members will contribute equally to UI design.
