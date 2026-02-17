@@ -1,3 +1,3 @@
-# Booking related function 
-# Seat booking
-# Booking confirmation 
+# Movie related function
+# List movies
+# Select movie
