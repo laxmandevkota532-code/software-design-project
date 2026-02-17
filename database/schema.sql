@@ -1,6 +1,5 @@
 PRAGMA foreign_keys = ON;
 
--- Users Table
 CREATE TABLE users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
@@ -9,7 +8,6 @@ CREATE TABLE users (
     role TEXT CHECK(role IN ('user', 'admin')) NOT NULL
 );
 
--- Movies Table
 CREATE TABLE movies (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     title TEXT NOT NULL,
@@ -18,7 +16,6 @@ CREATE TABLE movies (
     genre TEXT
 );
 
--- Shows Table
 CREATE TABLE shows (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     movie_id INTEGER NOT NULL,
@@ -28,7 +25,6 @@ CREATE TABLE shows (
     FOREIGN KEY (movie_id) REFERENCES movies(id)
 );
 
--- Seats Table
 CREATE TABLE seats (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     show_id INTEGER NOT NULL,
@@ -37,7 +33,6 @@ CREATE TABLE seats (
     FOREIGN KEY (show_id) REFERENCES shows(id)
 );
 
--- Bookings Table
 CREATE TABLE bookings (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     user_id INTEGER NOT NULL,
@@ -49,3 +44,4 @@ CREATE TABLE bookings (
     FOREIGN KEY (show_id) REFERENCES shows(id),
     FOREIGN KEY (seat_id) REFERENCES seats(id)
 );
+
