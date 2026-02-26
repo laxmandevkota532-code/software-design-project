@@ -1,4 +1,4 @@
-PRAGMA foreign_keys = ON;
+9PRAGMA foreign_keys = ON;
 
 CREATE TABLE users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -15,7 +15,8 @@ CREATE TABLE movies (
     duration INTEGER,
     genre TEXT
 );
-
+[-
+]
 CREATE TABLE shows (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     movie_id INTEGER NOT NULL,
