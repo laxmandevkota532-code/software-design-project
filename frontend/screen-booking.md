@@ -103,3 +103,164 @@ function confirmBooking() {
 
 
 
+
+
+
+
+
+
+
+
+/* ---------- BACKGROUND ---------- */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: radial-gradient(circle at top, #5a0000, #000000 70%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* ---------- MAIN CARD ---------- */
+.container {
+    width: 420px;
+    background: rgba(0,0,0,0.65);
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 0 40px rgba(255,0,0,0.25);
+}
+
+/* ---------- TITLE ---------- */
+h1 {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+/* ---------- SCREEN ---------- */
+.screen {
+    text-align: center;
+    background: linear-gradient(#333, #111);
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    font-size: 14px;
+}
+
+/* ---------- LEGEND ---------- */
+.legend {
+    display: flex;
+    justify-content: space-around;
+    font-size: 13px;
+    margin-bottom: 14px;
+}
+
+.legend span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;   
+}
+
+/* LEGEND COLORS */
+.dot.available {
+    background: #43A047;
+}
+
+.dot.selected {
+    background: #1E88E5;
+}
+
+.dot.booked {
+    background: #E53935;
+}
+
+/* ---------- SEATS ---------- */
+.seats {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 8px;
+    justify-items: center;
+    margin-bottom: 18px;
+}
+
+.seat {
+    width: 34px;
+    height: 34px;
+    border-radius: 6px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.seat.available {
+    background: linear-gradient(#66bb6a, #2e7d32);
+}
+
+.seat.selected {
+    background: linear-gradient(#42a5f5, #1e88e5);
+    box-shadow: 0 0 10px rgba(30,136,229,0.9);
+}
+
+.seat.booked {
+    background: linear-gradient(#ef5350, #c62828);
+    cursor: not-allowed;
+    opacity: 0.85;
+}
+
+.seat:hover:not(.booked) {
+    transform: scale(1.15);
+}
+
+/* ---------- PRICE ---------- */
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 14px;
+    border-radius: 14px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+/* ---------- BUTTON ---------- */
+button {
+    width: 100%;
+    height: 44px;
+    background: linear-gradient(#e53935, #b71c1c);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* ---------- SUCCESS ---------- */
+.success {
+    display: none;
+    margin-top: 14px;
+    text-align: center;
+    color: #66bb6a;
+    font-size: 16px;
+}
+
+
+
