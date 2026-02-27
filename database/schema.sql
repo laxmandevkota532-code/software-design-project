@@ -1,4 +1,4 @@
-9PRAGMA foreign_keys = ON;
+PRAGMA foreign_keys = ON;
 
 CREATE TABLE users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -46,3 +46,9 @@ CREATE TABLE bookings (
     FOREIGN KEY (seat_id) REFERENCES seats(id)
 );
 
+CREATE TABLE IF NOT EXISTS admins (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    email TEXT UNIQUE NOT NULL,
+    password TEXT NOT NULL
+);
