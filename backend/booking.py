@@ -1,3 +1,4 @@
+
 # Movie related function
 # List movies
 # Select movie
@@ -39,7 +40,7 @@ def book_ticket():
         print("Movie not found.")
         return
 
-    # --- NEW FEATURE: Seat Booking ---
+    #  NEW FEATURE: Seat Booking
     num = input(f"How many tickets for {pick['name']}? ")
     
     if not num.isdigit() or int(num) <= 0:
@@ -54,5 +55,5 @@ def book_ticket():
     print(f"TOTAL COST: ${total}")
     print("Enjoy the show!")
 
-# run it
 book_ticket()
+

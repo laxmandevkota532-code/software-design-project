@@ -15,7 +15,8 @@ CREATE TABLE movies (
     duration INTEGER,
     genre TEXT
 );
-
+[-
+]
 CREATE TABLE shows (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     movie_id INTEGER NOT NULL,
@@ -45,3 +46,9 @@ CREATE TABLE bookings (
     FOREIGN KEY (seat_id) REFERENCES seats(id)
 );
 
+CREATE TABLE IF NOT EXISTS admins (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    email TEXT UNIQUE NOT NULL,
+    password TEXT NOT NULL
+);
