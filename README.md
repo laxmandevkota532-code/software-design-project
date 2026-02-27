@@ -51,6 +51,3 @@ and collaborative software development.
 - User Panel
 - Seat Booking
 
-## How to Run
-1. Install Python
-2. Run: python main.py
