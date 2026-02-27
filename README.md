@@ -38,3 +38,19 @@ and collaborative software development.
 ## Technologies
 - Python
 - Git & GitHub
+
+
+# Movie Ticket Booking System
+
+## Features
+- Admin Dashboard
+- Add Movie
+- Add Show
+- View Bookings
+- View Revenue
+- User Panel
+- Seat Booking
+
+## How to Run
+1. Install Python
+2. Run: python main.py
